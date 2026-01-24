@@ -41,20 +41,20 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-16 bg-[#FAFAFA]">
+    <section id="services" className="py-10 sm:py-12 lg:py-16 bg-[#FAFAFA]">
       <div className="container">
         {/* Section header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1F3A5F] mb-4">
+        <div className="text-center mb-10 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1F3A5F] mb-3 sm:mb-4">
             What We <span className="text-[#E85D2A]">Handle</span>
           </h2>
-          <p className="text-slate-600 font-medium max-w-2xl mx-auto">
+          <p className="text-slate-600 font-bold max-w-2xl mx-auto text-sm sm:text-base px-2">
             End-to-end destination services designed for travel companies.
           </p>
         </div>
 
-        {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center">
+        {/* Services grid - 2 cols on mobile, 2 on tablet, 4 on desktop */}
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 text-center">
           {services.map((service) => (
             <div
               key={service.id}
@@ -63,8 +63,7 @@ export default function Services() {
               {/* Icon Circle */}
               <div
                 className={`
-                  w-[72px] h-[72px]
-                  md:w-[88px] md:h-[88px]
+                  w-[95px] h-[95px]
                   lg:w-[100px] lg:h-[100px]
                   rounded-full
                   ${service.colorClass}
@@ -76,7 +75,7 @@ export default function Services() {
                 <div
                   className="
                     relative
-                    w-[32px] h-[32px]
+                    w-[48px] h-[48px]
                     md:w-[48px] md:h-[48px]
                     lg:w-[64px] lg:h-[64px]
                   "
@@ -92,10 +91,10 @@ export default function Services() {
               </div>
 
               {/* Content */}
-              <h3 className="text-lg font-bold text-[#1F3A5F] mb-3 px-2">
+              <h3 className="text-md font-bold text-[#1F3A5F] mb-3 px-2">
                 {service.title}
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed max-w-[260px]">
+              <p className="text-slate-600 text-xs leading-relaxed max-w-[260px]">
                 {service.description}
               </p>
             </div>

@@ -63,14 +63,14 @@ export default function Hero() {
             <div className="container relative z-10 pt-20 pb-32">
                 <div className="max-w-3xl mx-auto text-center">
                     {/* Main heading */}
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight mb-6">
+                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight mb-6">
                         Your Trusted On-Ground DMC Partner for Seamless Travel Experiences
                     </h1>
 
                     {/* <p className="text-base md:text-lg text-slate-700 mb-10 max-w-2xl mx-auto">
                         We specialise in bespoke tours, travel experiences, and offer professional tourism and hospitality services in Kazakhstan.
                     </p> */}
-                    <p className="text-base md:text-lg text-slate-700 mb-10 max-w-2xl mx-auto">
+                    <p className="text-sm md:text-lg text-slate-700 mb-10 max-w-2xl mx-auto">
                        We help travel agents deliver flawless itineraries, reliable operations, and unforgettable journeys—without the stress of on-ground coordination.
                     </p>
 
@@ -78,14 +78,14 @@ export default function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <button
                             onClick={scrollToContact}
-                            className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E76F51] text-white font-semibold rounded-xl hover:bg-[#d85f45] transition-all hover:shadow-lg hover:shadow-[#E76F51]/30"
+                            className="inline-flex items-center justify-center px-8 py-3.5 bg-[#E76F51] text-white text-sm sm:text-md font-semibold rounded-xl hover:bg-[#d85f45] transition-all hover:shadow-lg hover:shadow-[#E76F51]/30"
                         >
                             Get a DMC Proposal
                         </button>
 
                         <Link
                             href="/destinations"
-                            className="inline-flex items-center justify-center px-8 py-3.5 bg-white/50 border-2 border-black/25 text-black font-semibold rounded-xl hover:bg-slate-200 hover:text-black transition-all"
+                            className="inline-flex items-center justify-center px-8 py-3.5 text-sm sm:text-md bg-white/50 border-2 border-black/25 text-black font-semibold rounded-xl hover:bg-slate-200 hover:text-black transition-all"
                         >
                             Explore Destinations
                         </Link>

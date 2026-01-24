@@ -9,7 +9,7 @@ export default function Footer() {
         <footer className="bg-[#EFF0F2] text-slate-800 font-sans">
             {/* Top Bar - Dark Blue */}
             <div className="bg-[#1F3A5FF2] text-white py-2 text-center px-4">
-                <div className="flex items-center justify-center gap-3 text-sm md:text-base font-medium">
+                <div className="flex items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm md:text-base font-medium">
                     <div className="w-8 h-8 bg-white/10 rounded flex items-center justify-center">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -19,12 +19,12 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="container mx-auto px-4 pt-8 pb-6">
+            <div className="container mx-auto px-4 pt-6 sm:pt-8 pb-6">
                 {/* Main Content Info */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 mb-12 text-center place-items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-4 mb-8 sm:mb-12 text-center place-items-center">
 
                     {/* Logo & Tagline (Left Column) */}
-                    <div className="lg:col-span-4 flex flex-col items-center text-center">
+                    <div className="lg:col-span-4 flex flex-col items-center text-center mb-6 lg:mb-0">
                         {/* Logo Placeholder - You can replace with actual Image component */}
                         <div className="mb-4">
                             <span className="text-3xl font-bold flex items-center gap-1">
@@ -44,7 +44,7 @@ export default function Footer() {
                     </div>
 
                     {/* Quick & Who We Work With (Middle Columns) */}
-                    <div className="lg:col-span-4 grid grid-cols-2 gap-16 place-items-center text-start">
+                    <div className="lg:col-span-4 grid grid-cols-2 gap-8 sm:gap-12 lg:gap-16 place-items-center text-start mb-6 lg:mb-0">
                         {/* Quick Links */}
                         <div>
                             <h3 className="font-bold text-slate-900 mb-4">Quick Links</h3>
@@ -68,7 +68,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    
+
 
                     {/* Contact (Right Column) */}
                     <div className="lg:col-span-4 text-center">
@@ -81,8 +81,8 @@ export default function Footer() {
                 </div>
 
                 {/* Address Bar - Dark Grey Rounded Box */}
-                <div className="bg-[#616A76] text-white rounded-xl p-6 md:p-2 max-w-5xl mx-auto shadow-sm ">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-xs opacity-90 leading-relaxed">
+                <div className="bg-[#616A76] text-white rounded-xl p-4 sm:p-6 md:p-4 lg:p-2 max-w-5xl mx-auto shadow-sm">
+                    <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center text-xs opacity-90 leading-relaxed py-2">
 
                         {/* India */}
                         <div>

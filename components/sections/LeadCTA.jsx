@@ -47,24 +47,24 @@ export default function LeadCTA() {
     };
 
     return (
-        <section className="relative pt-16 bg-white overflow-hidden">
+        <section className="relative pt-10 sm:pt-12 lg:pt-16 bg-white overflow-hidden">
             {/* Background Flight Path SVG */}
             <div className="absolute top-110 left-175 -translate-x-1/2 -translate-y-1/2 w-full max-w-[1400px] pointer-events-none z-0 opacity-60 hidden md:block">
                 <svg
-                width="1349"
-                height="590"
-                viewBox="0 0 1249 639"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                    width="1349"
+                    height="590"
+                    viewBox="0 0 1249 639"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                 >
-                <path
-                    d="M-182.498 0.997746C-182.498 0.997746 683 117.838 221 277.337C-241 436.837 661.5 249.838 429.5 547.838C197.5 845.838 1247.5 305.338 1247.5 305.338"
-                    stroke="#1F3A5F"
-                    strokeOpacity={0.3}
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeDasharray="7 8"
-                />
+                    <path
+                        d="M-182.498 0.997746C-182.498 0.997746 683 117.838 221 277.337C-241 436.837 661.5 249.838 429.5 547.838C197.5 845.838 1247.5 305.338 1247.5 305.338"
+                        stroke="#1F3A5F"
+                        strokeOpacity={0.3}
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeDasharray="7 8"
+                    />
                 </svg>
 
 
@@ -84,24 +84,24 @@ export default function LeadCTA() {
             <div className="container relative z-20 mx-auto px-4">
 
                 {/* Section Header */}
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-4">
+                <div className="text-center mb-8 sm:mb-10 lg:mb-12">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-slate-900 mb-3 sm:mb-4 px-2">
                         <span className="text-[#E86D48]">Let’s Build Better</span> Travel<br />
                         Experiences
                     </h2>
-                    <p className="text-slate-600 font-medium">
+                    <p className="text-slate-600 font-medium text-sm sm:text-base px-2">
                         End-to-end destination services designed for travel companies.
                     </p>
                 </div>
 
                 {/* Form Card */}
-                <div className="max-w-180 mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-100">
+                <div className="w-full sm:max-w-xl md:max-w-2xl lg:max-w-180 mx-auto bg-white rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden border border-slate-100">
                     {/* Form Header */}
-                    <div className="bg-[#E86D48] px-8 py-3">
+                    <div className="bg-[#E86D48] px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3">
                         <h3 className="text-white text-xl font-bold">Let’s Connect</h3>
                     </div>
 
-                    <div className="p-8 md:p-8">
+                    <div className="p-4 sm:p-6 lg:p-8">
                         {status === 'success' ? (
                             <div className="text-center py-10">
                                 <div className="w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -114,7 +114,7 @@ export default function LeadCTA() {
                         ) : (
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 {/* Row 1: Name & Email */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                                     <div>
                                         <label htmlFor="name" className="block text-sm font-bold text-slate-800 mb-2">Name*</label>
                                         <input
@@ -143,7 +143,7 @@ export default function LeadCTA() {
                                 </div>
 
                                 {/* Row 2: Mobile & Whatsapp */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                                     <div>
                                         <label htmlFor="mobile" className="block text-sm font-bold text-slate-800 mb-2">Mobile*</label>
                                         <input
@@ -227,7 +227,7 @@ export default function LeadCTA() {
                                     <button
                                         type="submit"
                                         disabled={status === 'loading'}
-                                        className="bg-[#E86D48] hover:bg-[#d55f3c] text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-sm disabled:opacity-70"
+                                        className="bg-[#E86D48] hover:bg-[#d55f3c] text-white text-sm sm:text-md font-bold py-3 px-8 rounded-lg transition-colors shadow-sm disabled:opacity-70"
                                     >
                                         {status === 'loading' ? 'Sending...' : 'Get a DMC Proposal'}
                                     </button>
@@ -238,8 +238,8 @@ export default function LeadCTA() {
                 </div>
 
                 {/* Footer Text */}
-                <div className="text-center mt-8 pb-8">
-                    <p className="font-serif font-bold text-slate-900 tracking-wide text-lg">
+                <div className=" text-start sm:text-center mt-6 sm:mt-8 pb-6 sm:pb-8">
+                    <p className="font-serif font-semibold text-slate-900 tracking-wide text-xs sm:text-base lg:text-lg">
                         No obligations • No spam • Just professional travel support
                     </p>
                 </div>
