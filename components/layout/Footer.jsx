@@ -15,7 +15,7 @@ export default function Footer() {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                         </svg>
                     </div>
-                    <span>Dreaming of travelling the world? Connect with EuroAsian at 011-40031000.</span>
+                    <span>Dreaming of travelling the world? Connect with EuroAsian at 0120-3261148.</span>
                 </div>
             </div>
 
@@ -74,8 +74,9 @@ export default function Footer() {
                     <div className="lg:col-span-4 text-center">
                         <h3 className="font-bold text-slate-900 mb-4">Contact</h3>
                         <div className="space-y-2 text-sm text-slate-600">
-                            <p>Email: partnerships@yourdmc.com</p>
-                            <p>Phone: +91 7303935818</p>
+                            <p>Email: info@euroasiandmc.com</p>
+                            <p>Phone: +91 9911883074</p>
+                            <p>Phone: +91 9911883075</p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +106,7 @@ export default function Footer() {
                             <h4 className="font-bold text-white mb-2 text-sm">Tashkent</h4>
                             <p>1/16 Qiyatariq Street, Yashnobad</p>
                             <p>District, Tashkent 220111</p>
-                            <p className="mt-1">+994 50 300 86 56</p>
+                            
                         </div>
 
                         {/* Baku */}
@@ -113,6 +114,7 @@ export default function Footer() {
                             <h4 className="font-bold text-white mb-2 text-sm">Baku</h4>
                             <p>Baku, Xetai District, Street – 8</p>
                             <p>November, No. 15</p>
+                            <p className="mt-1">+994 50 300 86 56</p>
                         </div>
 
                     </div>

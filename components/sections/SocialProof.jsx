@@ -34,11 +34,13 @@ export default function SocialProof() {
     <section className="relative z-30">
       {/* Mobile/Tablet: relative positioning, Desktop: absolute floating over hero */}
       <div className="
-        relative lg:absolute 
+        absolute lg:absolute 
+        -top-12
         lg:left-1/2 lg:-top-15 lg:-translate-x-1/2 
         w-full lg:w-[90%] 
         px-4 lg:px-0
         -mt-8 lg:mt-0
+        
       ">
         <div className="bg-[#FAFAFA] rounded-2xl shadow-xl py-2 sm:py-1 px-3 sm:px-6 lg:px-8 border border-black/20">
           {/* Mobile: 2x2 grid with dividers, Tablet/Desktop: 4 columns */}

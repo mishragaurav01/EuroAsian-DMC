@@ -16,7 +16,7 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="bg-[#F3F4F6] overflow-hidden sm:py-12 lg:py-16">
+    <section className="bg-[#F3F4F6] overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-row lg:flex-row items-center gap-6 sm:gap-10 lg:gap-20">
           {/* LEFT CONTENT */}

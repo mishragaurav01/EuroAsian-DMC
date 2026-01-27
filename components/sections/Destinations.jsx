@@ -11,17 +11,17 @@ export default function Destinations() {
     {
       slug: "almaty",
       name: "Almaty",
-      image: "/destinations/almaty.jpg",
+      image: "/destinations/almatyT1.jpeg",
     },
     {
       slug: "baku",
       name: "Baku",
-      image: "/destinations/baku.jpg",
+      image: "/destinations/Baku.jpg",
     },
     {
       slug: "tashkent",
       name: "Tashkent",
-      image: "/destinations/tashkent.jpg",
+      image: "/destinations/tashkentT1.jpeg",
     },
     {
       slug: "georgia",
@@ -38,7 +38,7 @@ export default function Destinations() {
   return (
     <section
       id="destinations"
-      className="pt-12 sm:pt-16 lg:pt-25 pb-12 sm:pb-16 lg:pb-20 bg-[#F9FAFB]"
+      className="pt-28 sm:pt-16 lg:pt-25 pb-12 sm:pb-16 lg:pb-20 bg-[#F9FAFB]"
     >
       <div className="container">
         {/* Section header */}
@@ -56,70 +56,95 @@ export default function Destinations() {
 
         {/* Destinations - Horizontal scroll on mobile/tablet, 5-column grid on desktop */}
         {/* Destinations - Vertical on mobile, 5-column grid on desktop */}
-        <div
-          className="
+<div
+  className="
     grid
-    grid-cols-1              /* Mobile */
-    md:grid-cols-5           /* Tablet + Desktop */
+    grid-cols-1
+    md:grid-cols-5
     gap-4 lg:gap-5
     pb-4 lg:pb-0
     -mx-4 px-4 lg:mx-0 lg:px-0
   "
-        >
-          {destinations.map((destination) => (
-            <Link
-              key={destination.slug}
-              href={`/destinations/${destination.slug}`}
-              className="block mx-auto w-[95%] md:w-full"
+>
+  {destinations.map((destination) => (
+    <Link
+      key={destination.slug}
+      href={`/destinations/${destination.slug}`}
+      className="group block mx-auto w-[95%] md:w-full"
+    >
+      <Card
+        radius="r25"
+        className="
+          relative aspect-5/4 md:aspect-[2.5/4]
+          overflow-hidden border border-black/15
+          transition-all duration-300 ease-out
+          group-hover:-translate-y-[2px]
+          group-hover:shadow-md
+        "
+      >
+        {/* Background Image */}
+        <Image
+          src={destination.image}
+          alt={destination.name}
+          fill
+          className="
+            object-center
+            sm:object-cover
+            transition-transform duration-500 ease-out
+            group-hover:scale-[1.03]
+          "
+          // sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
+        />
+
+        {/* Bottom Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 z-10">
+          <div className="flex items-center justify-between p-4 bg-white">
+            <h3
+              className="
+                text-lg font-bold text-[#1F3A5F]
+                transition-colors duration-300
+                group-hover:text-[#E85D2A]
+              "
             >
-              <Card
-                radius="r25"
-                className=" relative aspect-5/4 md:aspect-[2.5/4] lg:aspect-[2.5/4] overflow-hidden border-2 border-black/20"
-              >
-                {/* Background Image */}
-                <Image
-                  src={destination.image}
-                  alt={destination.name}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
-                />
+              {destination.name}
+            </h3>
 
-                {/* Bottom Overlay */}
-                <div className="absolute bottom-0 left-0 right-0 z-10">
-                  <div className="flex items-center justify-between p-4 bg-white/98">
-                    <h3 className="text-lg font-bold text-[#1F3A5F]">
-                      {destination.name}
-                    </h3>
-
-                    <div
-                      className="
+            {/* Arrow Button */}
+            <div
+              className="
                 w-8 h-8 rounded-full border border-slate-200
                 flex items-center justify-center
-                group-hover:bg-[#E85D2A] group-hover:border-[#E85D2A]
                 transition-colors duration-300
+                group-hover:bg-[#E85D2A]
+                group-hover:border-[#E85D2A]
               "
-                    >
-                      <svg
-                        className="w-4 h-4 text-slate-500 group-hover:text-white transition-colors duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </Link>
-          ))}
+            >
+              <svg
+                className="
+                  w-4 h-4 text-slate-500
+                  transition-all duration-300
+                  group-hover:text-white
+                  group-hover:translate-x-[2px]
+                "
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
+      </Card>
+    </Link>
+  ))}
+</div>
+
       </div>
     </section>
   );

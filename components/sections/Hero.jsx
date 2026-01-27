@@ -35,12 +35,17 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[#FAFAFA]">
+        <section className="  relative
+            min-h-[75vh] sm:min-h-[80vh] lg:min-h-[90vh]
+            flex items-center
+            overflow-hidden
+            bg-[#FAFAFA]"
+        >
             {/* Background Image Carousel */}
             {heroSlides.map((slide, index) => (
                 <div
                     key={slide}
-                    className={`absolute inset-0 overflow-hidden rounded-b-xl transition-opacity duration-1000 ${
+                    className={`absolute inset-0 overflow-hidden sm:rounded-b-xl transition-opacity duration-1000 ${
                         index === currentSlide ? "opacity-100" : "opacity-0"
                     }`}
                     >
@@ -62,10 +67,14 @@ export default function Hero() {
             {/* Content */}
             <div className="container relative z-10 pt-20 pb-32">
                 <div className="max-w-3xl mx-auto text-center">
-                    {/* Main heading */}
-                    <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight mb-6">
-                        Your Trusted On-Ground DMC Partner for Seamless Travel Experiences
-                    </h1>
+<h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-slate-900 leading-snug mb-6 text-center">
+  Your{" "}
+  <span className="text-[#E86D48]">
+    Trusted On-Ground DMC
+  </span>{" "}
+  Partner for Seamless Travel Experiences
+</h1>
+
 
                     {/* <p className="text-base md:text-lg text-slate-700 mb-10 max-w-2xl mx-auto">
                         We specialise in bespoke tours, travel experiences, and offer professional tourism and hospitality services in Kazakhstan.

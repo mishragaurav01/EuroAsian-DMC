@@ -125,7 +125,7 @@ export default function LeadCTA() {
                                             onChange={handleChange}
                                             required
                                             placeholder="name"
-                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-white text-slate-700 placeholder-slate-300"
+                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-[#F8F9FA] text-slate-700 placeholder-slate-300"
                                         />
                                     </div>
                                     <div>
@@ -137,7 +137,7 @@ export default function LeadCTA() {
                                             value={formData.email}
                                             onChange={handleChange}
                                             placeholder="david@gmail.com"
-                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-white text-slate-700 placeholder-slate-300"
+                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-[#F8F9FA] text-slate-700 placeholder-slate-300"
                                         />
                                     </div>
                                 </div>
@@ -154,7 +154,7 @@ export default function LeadCTA() {
                                             onChange={handleChange}
                                             required
                                             placeholder="Enter Mobile number"
-                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-white text-slate-700 placeholder-slate-300"
+                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-[#F8F9FA] text-slate-700 placeholder-slate-300"
                                         />
                                     </div>
                                     <div>
@@ -166,7 +166,7 @@ export default function LeadCTA() {
                                             value={formData.whatsapp}
                                             onChange={handleChange}
                                             placeholder="Enter Whatsapp number"
-                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-white text-slate-700 placeholder-slate-300"
+                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-[#F8F9FA] text-slate-700 placeholder-slate-300"
                                         />
                                     </div>
                                 </div>
@@ -182,7 +182,7 @@ export default function LeadCTA() {
                                             value={formData.date}
                                             onChange={handleChange}
                                             required
-                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-white text-slate-700 placeholder-slate-300"
+                                            className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-[#F8F9FA] text-slate-700 placeholder-slate-300"
                                         />
                                     </div>
                                     <div>
@@ -193,7 +193,7 @@ export default function LeadCTA() {
                                                 name="destination"
                                                 value={formData.destination}
                                                 onChange={handleChange}
-                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-white text-slate-700 appearance-none cursor-pointer"
+                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-[#F8F9FA] text-slate-700 appearance-none cursor-pointer"
                                             >
                                                 <option value="" disabled>Select a destination</option>
                                                 <option value="Almaty">Almaty</option>
@@ -218,7 +218,7 @@ export default function LeadCTA() {
                                         onChange={handleChange}
                                         rows={2}
                                         placeholder="Is there anything else you'd like to ask us?"
-                                        className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-white text-slate-700 placeholder-slate-300 resize-none"
+                                        className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#E86D48] focus:ring-1 focus:ring-[#E86D48] outline-none transition-colors bg-[#F8F9FA] text-slate-700 placeholder-slate-300 resize-none"
                                     />
                                 </div>
 
