@@ -16,7 +16,7 @@ export default function Destinations() {
     {
       slug: "baku",
       name: "Baku",
-      image: "/destinations/Baku.JPG",
+      image: "/destinations/Baku.jpg",
     },
     {
       slug: "tashkent",
