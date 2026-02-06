@@ -13,7 +13,7 @@ const stats = [
     label: "Groups Tour",
   },
   {
-    icon: "/icons/social-proof/happy-customers.png",
+    icon: "/icons/social-proof/happyCustomers.png",
     value: "94,000+",
     label: "Happy Customers",
   },
