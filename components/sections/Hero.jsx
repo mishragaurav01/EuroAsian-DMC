@@ -10,21 +10,21 @@ import Image from 'next/image';
  */
 
 const heroSlides = [
-    '/images/hero/slide-1.jpg',
-    // '/images/hero/slide-2.jpg',
-    // '/images/hero/slide-3.jpg',
+    '/images/hero/slideOne.jpg',
+    '/images/hero/carouselTwo.jpeg',
+    '/images/hero/carouselThree.jpeg',
 ];
 
 export default function Hero() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     // Auto-advance carousel
-    // useEffect(() => {
-    //     const timer = setInterval(() => {
-    //         setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
-    //     }, 5000);
-    //     return () => clearInterval(timer);
-    // }, []);
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, []);
 
     const scrollToContact = (e) => {
         e.preventDefault();
@@ -65,22 +65,20 @@ export default function Hero() {
             <div className="absolute inset-0 via-transparent to-white/60" />
 
             {/* Content */}
-            <div className="container relative z-10 pt-20 pb-32">
+            <div className="container relative z-10 pt-20 lg:pt-30 pb-32">
                 <div className="max-w-3xl mx-auto text-center">
-<h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-slate-900 leading-snug mb-6 text-center">
-  Your{" "}
-  <span className="text-[#E86D48]">
-    Trusted On-Ground DMC
-  </span>{" "}
-  Partner for Seamless Travel Experiences
-</h1>
-
-
+                    <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-semibold text-slate-900 leading-snug mb-6 text-center">
+                    Your{" "}
+                    <span className="text-[#E86D48]">
+                        Trusted On-Ground DMC
+                    </span>{" "}
+                    Partner for Seamless Travel Experiences
+                    </h1>
                     {/* <p className="text-base md:text-lg text-slate-700 mb-10 max-w-2xl mx-auto">
                         We specialise in bespoke tours, travel experiences, and offer professional tourism and hospitality services in Kazakhstan.
                     </p> */}
-                    <p className="text-sm md:text-lg text-slate-700 mb-10 max-w-2xl mx-auto">
-                       We help travel agents deliver flawless itineraries, reliable operations, and unforgettable journeys—without the stress of on-ground coordination.
+                    <p className="text-sm md:text-lg text-slate-900 mb-10 max-w-2xl mx-auto">
+                       We help travel agents deliver flawless itineraries, reliable operations, and unforgettable journeys - without the stress of on-ground coordination.
                     </p>
 
                     {/* CTAs */}

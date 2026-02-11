@@ -48,38 +48,45 @@ export default function LeadCTA() {
 
     return (
         <section className="relative pt-10 sm:pt-12 lg:pt-16 bg-white overflow-hidden">
-            {/* Background Flight Path SVG */}
-            <div className="absolute top-110 left-175 -translate-x-1/2 -translate-y-1/2 w-full max-w-[1400px] pointer-events-none z-0 opacity-60 hidden md:block">
-                <svg
-                    width="1349"
-                    height="590"
-                    viewBox="0 0 1249 639"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M-182.498 0.997746C-182.498 0.997746 683 117.838 221 277.337C-241 436.837 661.5 249.838 429.5 547.838C197.5 845.838 1247.5 305.338 1247.5 305.338"
-                        stroke="#1F3A5F"
-                        strokeOpacity={0.3}
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeDasharray="7 8"
-                    />
-                </svg>
+            {/* Background Flight Path SVG + Plane - single responsive container */}
+<div className="absolute inset-0 w-full h-full pointer-events-none z-0 hidden md:block overflow-hidden">
 
+  {/* SVG wrapper */}
+  <div className="absolute top-[45%] left-[41%] -translate-x-1/2 -translate-y-1/2 w-[100%] max-w-[1400px] opacity-60">
 
-            </div>
+    <svg
+      viewBox="0 0 1249 639"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-auto"
+      preserveAspectRatio="xMidYMid meet"
+    >
 
-            {/* Plane Image - Positioned absolutely based on the path roughly */}
-            <div className="absolute top-[38.1%] right-[5%] lg:right-[11.1%] w-24 md:w-32 lg:w-30 z-10 hidden md:block transform rotate-[-20deg]">
-                <Image
-                    src="/images/lead-cta/plane.png"
-                    alt="Travel Plane"
-                    width={200}
-                    height={100}
-                    className="w-full h-auto object-contain"
-                />
-            </div>
+      {/* Flight Path */}
+      <path
+        d="M-182.498 0.997746C-182.498 0.997746 683 117.838 221 277.337C-241 436.837 661.5 249.838 429.5 547.838C197.5 845.838 1247.5 305.338 1247.5 305.338"
+        stroke="#1F3A5F"
+        strokeOpacity={0.3}
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeDasharray="7 8"
+      />
+
+      {/* ✈️ Plane INSIDE SVG */}
+      <image
+        href="/images/lead-cta/plane.png"
+        x="1291"   /* Adjust endpoint X */
+        y="100"    /* Adjust endpoint Y */
+        width="90"
+        height="90"
+        transform="rotate(-20 1130 260)"
+        style={{ transformOrigin: "center" }}
+      />
+
+    </svg>
+  </div>
+</div>
+
 
             <div className="container relative z-20 mx-auto px-4">
 

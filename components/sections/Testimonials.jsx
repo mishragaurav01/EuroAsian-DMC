@@ -58,12 +58,12 @@ export default function Testimonials() {
           {/* RIGHT POLAROID SECTION */}
           <div className="flex-1 w-full flex justify-center lg:justify-end items-center relative py-6 sm:py-10 lg:py-0 order-2 lg:order-0">
             {/* Mobile: Single polaroid, Tablet+: Stacked polaroids */}
-            <div className="relative w-full max-w-[180px] sm:max-w-[400px] md:max-w-[500px] h-[280px] sm:h-[350px] md:h-[500px]">
+            <div className="relative w-full max-w-[180px] sm:max-w-[400px] md:max-w-[400px] lg:max-w-[500px] h-[280px] sm:h-[350px] md:h-[500px] lg:h-[500px]">
 
               {/* BACK POLAROID - Hidden on mobile, shown on sm+ */}
               <div className=" sm:block absolute top-1/2 -left-9 sm:left-2 md:left-4 lg:left-[-10px] -translate-y-1/2 -rotate-12 transition-transform duration-500 hover:rotate-0 hover:z-30 z-20 group">
                 <div className="bg-white p-1 sm:p-3 shadow-xl">
-                  <div className="relative w-[65px] sm:w-[200px] md:w-[260px] h-[90px] sm:h-[260px] md:h-[340px] overflow-hidden">
+                  <div className="relative w-[65px] sm:w-[200px] md:w-[160px] lg:w-[260px] h-[90px] sm:h-[260px] md:h-[220px] lg:h-[340px] overflow-hidden">
                     {/* IMAGE (SSR SAFE) */}
                     <Image
                       src="/images/testimonials/rafting.jpg"
@@ -118,7 +118,7 @@ export default function Testimonials() {
                 transition-transform duration-500 hover:rotate-0 hover:z-30 z-10 group
               ">
                 <div className="bg-white p-1 sm:p-3 shadow-xl">
-                  <div className="relative w-[80px] sm:w-[200px] md:w-[260px] h-[110px] sm:h-[260px] md:h-[340px] overflow-hidden">
+                  <div className="relative w-[80px] sm:w-[200px] md:w-[180px] lg:w-[260px] h-[110px] sm:h-[260px] md:h-[260px] lg:h-[340px] overflow-hidden">
                     {/* IMAGE */}
                     <Image
                       src="/images/testimonials/snow.jpg"

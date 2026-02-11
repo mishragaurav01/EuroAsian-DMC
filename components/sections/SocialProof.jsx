@@ -13,9 +13,9 @@ const stats = [
     label: "Groups Tour",
   },
   {
-    icon: "/icons/social-proof/happyCustomers.png",
-    value: "94,000+",
-    label: "Happy Customers",
+    icon: "/icons/social-proof/experiences.png",
+    value: "100+",
+    label: "Experiences",
   },
   {
     icon: "/icons/social-proof/destinations.png",
@@ -23,10 +23,11 @@ const stats = [
     label: "Destinations",
   },
   {
-    icon: "/icons/social-proof/experiences.png",
-    value: "100+",
-    label: "Experiences",
+    icon: "/icons/social-proof/happyCustomers.png",
+    value: "94,000+",
+    label: "Happy Customers",
   },
+  
 ];
 
 export default function SocialProof() {
@@ -48,7 +49,7 @@ export default function SocialProof() {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`flex items-center justify-center gap-2 sm:gap-3 lg:gap-4 py-3 sm:py-4 ${
+                className={`flex items-center justify-start pl-4 sm:pl-6 md:pl-3 md:justify-center gap-2 sm:gap-3 lg:gap-4 py-3 sm:py-4 ${
                   /* Add top border on mobile for bottom row items */
                   index >= 2 ? 'border-t md:border-t-0 border-slate-200' : ''
                   }`}

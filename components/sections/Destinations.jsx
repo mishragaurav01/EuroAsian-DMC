@@ -43,10 +43,10 @@ export default function Destinations() {
       <div className="container">
         {/* Section header */}
         <div className="text-center mb-8 sm:mb-10 lg:mb-12">
-          <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-[#1F3A5F]">
+          <p className="text-2xl sm:text-2xl md:text-3xl font-bold text-[#1F3A5F]">
             <span className="text-[#E85D2A]">Destinations</span> we actively
             manage
-          </h2>
+          </p>
           <p className="text-slate-600 max-w-2xl mx-auto mt-3 sm:mt-4 text-sm md:text-base px-2">
             Each destination is supported by vetted suppliers, experienced
             guides, and dedicated coordination teams - so your itineraries run
@@ -61,7 +61,7 @@ export default function Destinations() {
     grid
     grid-cols-1
     md:grid-cols-5
-    gap-4 lg:gap-5
+    gap-3 lg:gap-5
     pb-4 lg:pb-0
     -mx-4 px-4 lg:mx-0 lg:px-0
   "
@@ -75,7 +75,7 @@ export default function Destinations() {
       <Card
         radius="r25"
         className="
-          relative aspect-5/4 md:aspect-[2.5/4]
+          relative aspect-5/4 md:aspect-[2/4] lg:aspect-[2.5/4]
           overflow-hidden border border-black/15
           transition-all duration-300 ease-out
           group-hover:-translate-y-[2px]

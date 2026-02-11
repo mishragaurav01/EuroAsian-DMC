@@ -45,10 +45,10 @@ export default function Services() {
       <div className="container">
         {/* Section header */}
         <div className="text-center mb-10 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1F3A5F] mb-3 sm:mb-4">
+          <p className="text-2xl sm:text-2xl md:text-3xl font-bold text-[#1F3A5F] mb-3 sm:mb-4">
             What We <span className="text-[#E85D2A]">Handle</span>
-          </h2>
-          <p className="text-slate-600 font-bold max-w-2xl mx-auto text-sm sm:text-base px-2">
+          </p>
+          <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base px-2">
             End-to-end destination services designed for travel companies.
           </p>
         </div>
