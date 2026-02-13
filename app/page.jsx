@@ -6,6 +6,7 @@ import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
 import Testimonials from '@/components/sections/Testimonials';
 import LeadCTA from '@/components/sections/LeadCTA';
+import AutoPopup from '@/components/ui/AutoPopup';
 
 /**
  * Homepage - Server Component
@@ -22,6 +23,7 @@ export default function HomePage() {
             <Services />
             <Testimonials />
             <LeadCTA />
+            <AutoPopup />
         </Layout>
     );
 }

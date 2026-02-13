@@ -68,3 +68,45 @@ body {
     display: none;
     /* Chrome, Safari and Opera */
 }
+
+/* Lead form submit button pulse animation (auto-popup) */
+.lead-btn-pulse {
+    animation: btnPulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes btnPulseGlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(232, 109, 72, 0.5);
+    }
+
+    50% {
+        transform: scale(1.06);
+        box-shadow: 0 0 24px 8px rgba(232, 109, 72, 0.4);
+    }
+}
+
+/* Modal animations */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
