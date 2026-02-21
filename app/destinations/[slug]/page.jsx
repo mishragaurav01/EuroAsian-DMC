@@ -27,6 +27,8 @@ export default async function DestinationPage({ params }) {
                 title={data.hero.title}
                 subtitle={data.hero.subtitle}
                 image={data.hero.image}
+                objectPosition={data.hero.objectPosition}
+                imageClassName={data.hero.imageClassName}
             />
 
             <DestinationServices services={data.services} />

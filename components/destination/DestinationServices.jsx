@@ -16,7 +16,7 @@ export default function DestinationServices({ services }) {
                 </div>
 
                 {/* Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-12 max-w-6xl mx-auto">
                     {services.map((service) => (
                         <ServiceCard
                             key={service.id}

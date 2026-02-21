@@ -3,7 +3,9 @@ export const destinationsData = {
         hero: {
             title: 'Welcome to Kazakhstan!',
             subtitle: 'Kazakhstan is a land of breathtaking landscapes and a rich cultural legacy, offering experiences that are both inspiring and unforgettable.',
-            image: '/images/destinations/almaty/hero.jpeg',
+            image: '/images/destinations/almaty/almatyMain.jpeg',
+            objectPosition: 'object-[50%_0%]',
+            imageClassName: 'scale-100 md:scale-100', // Example: managing scale with breakpoints
         },
         services: [
             {
@@ -75,32 +77,28 @@ export const destinationsData = {
         hero: {
             title: 'Welcome to Azerbaijan!',
             subtitle: 'Experience the blend of East and West in the windy city of Baku.',
-            image: '/images/destinations/baku/hero.jpg',
+            image: '/images/destinations/baku/bakuMain.jpg',
+            objectPosition: 'object-[50%_25%]',
+            imageClassName: 'scale-125 md:scale-100',
         },
         services: [
             {
                 id: 's1',
-                title: 'City Transfers',
-                description: 'Seamless transport within Baku and to surrounding regions.',
-                icon: '🚗',
+                title: 'Local Experties',
+                description: 'On ground teams across major Kazakh destinations',
+                icon: '✈️',
             },
             {
                 id: 's2',
-                title: 'Luxury Accommodation',
-                description: 'Stay in the iconic Flame Towers or historic Old City hotels.',
-                icon: '🏰',
+                title: 'B2B Specialists',
+                description: 'Trusted by global travel agents & tour operators',
+                icon: '🏨',
             },
             {
                 id: 's3',
-                title: 'Cultural Tours',
-                description: 'Discover the UNESCO-listed Walled City of Baku.',
-                icon: '🕌',
-            },
-            {
-                id: 's4',
-                title: 'Event Management',
-                description: 'Organize corporate events with a stunning Caspian Sea backdrop.',
-                icon: '🎉',
+                title: 'End-to-End Services',
+                description: 'From airport meet to farewell dinner',
+                icon: '🗺️',
             },
         ],
         planner: [
@@ -160,32 +158,28 @@ export const destinationsData = {
         hero: {
             title: 'Welcome to Uzbekistan!',
             subtitle: 'Tashkent, the heart of the Silk Road, awaits with open arms.',
-            image: '/images/destinations/tashkent/hero.jpg',
+            image: '/images/destinations/tashkent/tashkentMain.jpg',
+            objectPosition: 'object-[50%_25%]',
+            imageClassName: '',
         },
         services: [
             {
                 id: 's1',
-                title: 'Silk Road Transport',
-                description: 'High-speed trains to Samarkand and Bukhara from Tashkent.',
-                icon: '🚅',
+                title: 'Local Experties',
+                description: 'On ground teams across major Kazakh destinations',
+                icon: '✈️',
             },
             {
                 id: 's2',
-                title: 'Heritage Hotels',
-                description: 'Authentic stays reflecting Uzbek culture and hospitality.',
-                icon: '🛌',
+                title: 'B2B Specialists',
+                description: 'Trusted by global travel agents & tour operators',
+                icon: '🏨',
             },
             {
                 id: 's3',
-                title: 'Gastronomy Tours',
-                description: 'Taste the best Plov and diverse Uzbek cuisine.',
-                icon: '🍚',
-            },
-            {
-                id: 's4',
-                title: 'Bazaar Visits',
-                description: 'Shopping assistance at Chorsu Bazaar for spices and crafts.',
-                icon: '🛍️',
+                title: 'End-to-End Services',
+                description: 'From airport meet to farewell dinner',
+                icon: '🗺️',
             },
         ],
         planner: [
@@ -224,32 +218,28 @@ export const destinationsData = {
         hero: {
             title: 'Welcome to Georgia!',
             subtitle: 'A land of ancient churches, wine, and high mountains.',
-            image: '/images/destinations/georgia/hero.jpg',
+            image: '/images/destinations/georgia/georgiaMain.jpeg',
+            objectPosition: 'object-[50%_10%]',
+            imageClassName: '',
         },
         services: [
             {
                 id: 's1',
-                title: 'Wine Tours',
-                description: 'Exclusive tastings in the birthplace of wine.',
-                icon: '🍷',
+                title: 'Local Experties',
+                description: 'On ground teams across major Kazakh destinations',
+                icon: '✈️',
             },
             {
                 id: 's2',
-                title: 'Mountain transport',
-                description: '4x4 vehicles for trips to Kazbegi and Svaneti.',
-                icon: '🚙',
+                title: 'B2B Specialists',
+                description: 'Trusted by global travel agents & tour operators',
+                icon: '🏨',
             },
             {
                 id: 's3',
-                title: 'Tbilisi Guides',
-                description: 'Expert local guides for the charming streets of Tbilisi.',
-                icon: '🏙️',
-            },
-            {
-                id: 's4',
-                title: 'Culinary Masterclasses',
-                description: 'Learn to make Khachapuri and Khinkali.',
-                icon: '🥟',
+                title: 'End-to-End Services',
+                description: 'From airport meet to farewell dinner',
+                icon: '🗺️',
             },
         ],
         planner: [
@@ -284,36 +274,32 @@ export const destinationsData = {
             },
         ],
     },
-    dubai: {
+    turkey: {
         hero: {
-            title: 'Welcome to Dubai!',
+            title: 'Welcome to Turkey!',
             subtitle: 'The city of the future, where luxury knows no bounds.',
-            image: '/images/destinations/dubai/hero.jpg',
+            image: '/images/destinations/dubai/dubaiMain.jpeg',
+            objectPosition: 'object-[50%_15%]',
+            imageClassName: '',
         },
         services: [
             {
                 id: 's1',
-                title: 'VIP Transfers',
-                description: 'Luxury car transfers and helicopter rides.',
-                icon: '🚁',
+                title: 'Local Experties',
+                description: 'On ground teams across major Kazakh destinations',
+                icon: '✈️',
             },
             {
                 id: 's2',
-                title: '5-Star Stays',
-                description: 'Bookings at the most opulent hotels in the world.',
+                title: 'B2B Specialists',
+                description: 'Trusted by global travel agents & tour operators',
                 icon: '🏨',
             },
             {
                 id: 's3',
-                title: 'Desert Safaris',
-                description: 'Premium desert experiences with gourmet dining.',
-                icon: '🐫',
-            },
-            {
-                id: 's4',
-                title: 'Yacht Charters',
-                description: 'Private yacht cruises around the Palm Jumeirah.',
-                icon: '🛥️',
+                title: 'End-to-End Services',
+                description: 'From airport meet to farewell dinner',
+                icon: '🗺️',
             },
         ],
         planner: [
@@ -327,7 +313,7 @@ export const destinationsData = {
         packages: [
             {
                 id: 'pkg1',
-                title: 'Dubai Essentials',
+                title: 'Turkey Essentials',
                 duration: '5 Days / 4 Nights',
                 description: 'Burj Khalifa, Dubai Mall, and a Desert Safari.',
                 image: '/images/destinations/dubai/package1.jpg',

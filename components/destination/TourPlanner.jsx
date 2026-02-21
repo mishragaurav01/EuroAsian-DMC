@@ -18,10 +18,10 @@ export default function TourPlanner({ plannerItems, destinationName }) {
                 </div>
 
                 {/* Content */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16 items-center">
 
                     {/* LEFT: ICON GRID */}
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-8">
                         {plannerItems.map((item) => (
                             <IconCard
                                 key={item.id}
@@ -32,7 +32,7 @@ export default function TourPlanner({ plannerItems, destinationName }) {
                     </div>
 
                     {/* RIGHT: IMAGE */}
-                    <div className="relative h-[360px] md:h-[420px] rounded-xl overflow-hidden">
+                    <div className="relative h-[360px] rounded-xl overflow-hidden">
                         <Image
                             src="/images/planner-side.jpg"
                             alt="Tour Planner"
@@ -40,7 +40,6 @@ export default function TourPlanner({ plannerItems, destinationName }) {
                             className="object-cover"
                         />
                     </div>
-
                 </div>
             </div>
         </section>

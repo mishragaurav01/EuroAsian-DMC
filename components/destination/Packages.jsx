@@ -39,6 +39,7 @@ export default function Packages({ packages }) {
             overflow-x-auto
             scrollbar-hide
             px-4 sm:px-8 lg:px-12
+            py-4
           "
         >
           {packages.map((pkg) => (

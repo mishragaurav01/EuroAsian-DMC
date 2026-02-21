@@ -16,7 +16,7 @@ export default function PackageCard({ title, duration, image }) {
 
             {/* Content */}
             <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-lg font-bold text-primary mb-1">
+                <h3 className="text-lg font-bold text-[#1F3A5F] mb-1">
                     {title}
                 </h3>
 
@@ -24,12 +24,12 @@ export default function PackageCard({ title, duration, image }) {
                     <span className="text-gray-700">
                         {duration}
                     </span>
-                    <a href="#" className="text-primary hover:underline">
+                    <a href="#" className="text-[#E65A3A] hover:underline">
                         Download plans
                     </a>
                 </div>
 
-                <button className="mt-auto mx-auto bg-[#E65A3A] text-white text-sm font-semibold px-6 py-2 rounded-full">
+                <button className="mt-auto mx-auto bg-[#E65A3A] text-white text-sm font-semibold px-6 py-2 rounded-md">
                     Ask for Details
                 </button>
             </div>
