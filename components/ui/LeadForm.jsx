@@ -164,7 +164,7 @@ export default function LeadForm({ onSuccess, animated = false }) {
                             <option value="Baku">Baku</option>
                             <option value="Tashkent">Tashkent</option>
                             <option value="Georgia">Georgia</option>
-                            <option value="Dubai">Dubai</option>
+                            <option value="Turkey">Turkey</option>
                         </select>
                         {/* Custom Arrow */}
                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-500">

@@ -29,9 +29,9 @@ export default function Destinations() {
       image: "/destinations/georgia.jpg",
     },
     {
-      slug: "dubai",
-      name: "Dubai",
-      image: "/destinations/dubai.jpg",
+      slug: "turkey",
+      name: "Turkey",
+      image: "/destinations/turkeyCard.jpg",
     },
   ];
 
@@ -56,8 +56,8 @@ export default function Destinations() {
 
         {/* Destinations - Horizontal scroll on mobile/tablet, 5-column grid on desktop */}
         {/* Destinations - Vertical on mobile, 5-column grid on desktop */}
-<div
-  className="
+        <div
+          className="
     grid
     grid-cols-1
     md:grid-cols-5
@@ -65,85 +65,85 @@ export default function Destinations() {
     pb-4 lg:pb-0
     -mx-4 px-4 lg:mx-0 lg:px-0
   "
->
-  {destinations.map((destination) => (
-    <Link
-      key={destination.slug}
-      href={`/destinations/${destination.slug}`}
-      className="group block mx-auto w-[95%] md:w-full"
-    >
-      <Card
-        radius="r25"
-        className="
+        >
+          {destinations.map((destination) => (
+            <Link
+              key={destination.slug}
+              href={`/destinations/${destination.slug}`}
+              className="group block mx-auto w-[95%] md:w-full"
+            >
+              <Card
+                radius="r25"
+                className="
           relative aspect-5/4 md:aspect-[2/4] lg:aspect-[2.5/4]
           overflow-hidden border border-black/15
           transition-all duration-300 ease-out
           group-hover:-translate-y-[2px]
           group-hover:shadow-md
         "
-      >
-        {/* Background Image */}
-        <Image
-          src={destination.image}
-          alt={destination.name}
-          fill
-          className="
+              >
+                {/* Background Image */}
+                <Image
+                  src={destination.image}
+                  alt={destination.name}
+                  fill
+                  className="
             object-center
             sm:object-cover
             transition-transform duration-500 ease-out
             group-hover:scale-[1.03]
           "
-          // sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
-        />
+                // sizes="(min-width: 1024px) 20vw, (min-width: 640px) 50vw, 100vw"
+                />
 
-        {/* Bottom Overlay */}
-        <div className="absolute bottom-0 left-0 right-0 z-10">
-          <div className="flex items-center justify-between p-4 bg-white">
-            <h3
-              className="
+                {/* Bottom Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 z-10">
+                  <div className="flex items-center justify-between p-4 bg-white">
+                    <h3
+                      className="
                 text-lg font-bold text-[#1F3A5F]
                 transition-colors duration-300
                 group-hover:text-[#E85D2A]
               "
-            >
-              {destination.name}
-            </h3>
+                    >
+                      {destination.name}
+                    </h3>
 
-            {/* Arrow Button */}
-            <div
-              className="
+                    {/* Arrow Button */}
+                    <div
+                      className="
                 w-8 h-8 rounded-full border border-slate-200
                 flex items-center justify-center
                 transition-colors duration-300
                 group-hover:bg-[#E85D2A]
                 group-hover:border-[#E85D2A]
               "
-            >
-              <svg
-                className="
+                    >
+                      <svg
+                        className="
                   w-4 h-4 text-slate-500
                   transition-all duration-300
                   group-hover:text-white
                   group-hover:translate-x-[2px]
                 "
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </div>
-          </div>
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          ))}
         </div>
-      </Card>
-    </Link>
-  ))}
-</div>
 
       </div>
     </section>

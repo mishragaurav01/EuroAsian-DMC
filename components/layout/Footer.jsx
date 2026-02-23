@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
 
           {/* ===== Contact ===== */}
-          <div className="lg:col-span-4 text-center">
+          <div className="lg:col-span-4 text-start">
             <h3 className="font-bold text-slate-900 mb-4">Contact</h3>
             <div className="space-y-2 text-sm text-slate-600">
               <p>Email: info@euroasiandmc.com</p>

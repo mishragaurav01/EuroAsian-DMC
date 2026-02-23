@@ -18,7 +18,7 @@ export default function Navbar() {
     { href: '/destinations/baku', label: 'Baku' },
     { href: '/destinations/tashkent', label: 'Tashkent' },
     { href: '/destinations/georgia', label: 'Georgia' },
-    { href: '/destinations/dubai', label: 'Dubai' },
+    { href: '/destinations/turkey', label: 'Turkey' },
   ];
 
   const toggleMobileMenu = () => {
@@ -60,7 +60,7 @@ export default function Navbar() {
         h-[47px]
         px-[24px] lg:px-[37px]
         gap-6 lg:gap-10
-        rounded-[25px]
+        rounded-xl
         bg-[#F9F9F9B2]
         backdrop-blur-md
         border border-white/30
@@ -70,7 +70,7 @@ export default function Navbar() {
           {/* Home */}
           <Link
             href="/"
-            className="text-slate-800 hover:text-slate-600 font-medium text-sm transition-colors whitespace-nowrap"
+            className="text-[#1F3A5F] hover:text-slate-600 font-semibold text-sm transition-colors whitespace-nowrap"
           >
             Home
           </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
             onMouseLeave={() => setIsDestinationsOpen(false)}
           >
             <button
-              className="flex items-center gap-1 text-slate-800 hover:text-slate-600 font-medium text-sm transition-colors whitespace-nowrap"
+              className="flex items-center gap-1 text-[#1F3A5F] hover:text-slate-600 font-semibold text-sm transition-colors whitespace-nowrap"
               onClick={() => setIsDestinationsOpen(!isDestinationsOpen)}
             >
               Destinations
@@ -105,8 +105,8 @@ export default function Navbar() {
             {/* Dropdown */}
             <div
               className={`absolute top-full left-1/2 -translate-x-1/2 pt-2 transition-all duration-200 ${isDestinationsOpen
-                  ? "opacity-100 visible translate-y-0"
-                  : "opacity-0 invisible -translate-y-2"
+                ? "opacity-100 visible translate-y-0"
+                : "opacity-0 invisible -translate-y-2"
                 }`}
             >
               <div className="bg-white rounded-xl shadow-lg border border-slate-100 py-2 min-w-[180px]">
@@ -126,7 +126,7 @@ export default function Navbar() {
           {/* About */}
           <Link
             href="/#about"
-            className="text-slate-800 hover:text-slate-600 font-medium text-sm transition-colors whitespace-nowrap"
+            className="text-[#1F3A5F] hover:text-slate-600 font-semibold text-sm transition-colors whitespace-nowrap"
           >
             About us
           </Link>
@@ -136,7 +136,7 @@ export default function Navbar() {
             onClick={() => {
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="text-slate-800 hover:text-slate-600 font-medium text-sm transition-colors whitespace-nowrap"
+            className="text-[#1F3A5F] hover:text-slate-600 font-semibold text-sm transition-colors whitespace-nowrap"
           >
             Contact us
           </button>
@@ -195,7 +195,7 @@ export default function Navbar() {
               <Link
                 href="/"
                 onClick={closeMobileMenu}
-                className="text-slate-800 hover:text-[#E76F51] hover:bg-slate-50 font-medium text-base py-3 px-4 rounded-lg transition-colors"
+                className="text-[#1F3A5F] hover:text-[#E76F51] hover:bg-slate-50 font-semibold text-base py-3 px-4 rounded-lg transition-colors"
               >
                 Home
               </Link>
@@ -204,7 +204,7 @@ export default function Navbar() {
               <div>
                 <button
                   onClick={toggleMobileDestinations}
-                  className="w-full flex items-center justify-between text-slate-800 hover:text-[#E76F51] hover:bg-slate-50 font-medium text-base py-3 px-4 rounded-lg transition-colors"
+                  className="w-full flex items-center justify-between text-[#1F3A5F] hover:text-[#E76F51] hover:bg-slate-50 font-semibold text-base py-3 px-4 rounded-lg transition-colors"
                 >
                   <span>Destinations</span>
                   <svg
@@ -226,8 +226,8 @@ export default function Navbar() {
                 {/* Submenu */}
                 <div
                   className={`overflow-hidden transition-all duration-200 ${isMobileDestinationsOpen
-                      ? "max-h-60 opacity-100"
-                      : "max-h-0 opacity-0"
+                    ? "max-h-60 opacity-100"
+                    : "max-h-0 opacity-0"
                     }`}
                 >
                   <div className="pl-4 py-1 space-y-1">
@@ -249,7 +249,7 @@ export default function Navbar() {
               <Link
                 href="/#about"
                 onClick={closeMobileMenu}
-                className="text-slate-800 hover:text-[#E76F51] hover:bg-slate-50 font-medium text-base py-3 px-4 rounded-lg transition-colors"
+                className="text-[#1F3A5F] hover:text-[#E76F51] hover:bg-slate-50 font-semibold text-base py-3 px-4 rounded-lg transition-colors"
               >
                 About us
               </Link>
@@ -260,7 +260,7 @@ export default function Navbar() {
                   closeMobileMenu();
                   document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="text-left text-slate-800 hover:text-[#E76F51] hover:bg-slate-50 font-medium text-base py-3 px-4 rounded-lg transition-colors"
+                className="text-left text-[#1F3A5F] hover:text-[#E76F51] hover:bg-slate-50 font-semibold text-base py-3 px-4 rounded-lg transition-colors"
               >
                 Contact us
               </button>

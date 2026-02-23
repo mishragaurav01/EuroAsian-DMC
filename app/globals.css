@@ -110,3 +110,185 @@ body {
         transform: translateY(0) scale(1);
     }
 }
+
+/* ─── WhatsApp Floating Button ─── */
+.whatsapp-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.45);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float__icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Pulse ring */
+.whatsapp-float__ring {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 2px solid rgba(37, 211, 102, 0.5);
+    animation: waPulseRing 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    pointer-events: none;
+}
+
+@keyframes waPulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    70% {
+        transform: scale(1.35);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.35);
+        opacity: 0;
+    }
+}
+
+/* Tooltip */
+.whatsapp-float__tooltip {
+    position: absolute;
+    right: 72px;
+    white-space: nowrap;
+    background: #1f3a5f;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.whatsapp-float__tooltip::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: #1f3a5f;
+    border-right-width: 0;
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .whatsapp-float__icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .whatsapp-float__tooltip {
+        display: none;
+    }
+}
+
+/* Hide WhatsApp float on mobile – replaced by MobileContactSlider */
+@media (max-width: 767px) {
+    .whatsapp-float {
+        display: none !important;
+    }
+}
+
+/* ─── Mobile Contact Bar ─── */
+.mobile-contact-bar {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .mobile-contact-bar {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+    }
+}
+
+.mobile-contact-bar__inner {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #1F3A5F;
+    border-radius: 32px;
+    padding: 5px 5px 5px 5px;
+    box-shadow:
+        0 4px 24px rgba(31, 58, 95, 0.45),
+        0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+/* WhatsApp circle button (left) */
+.mobile-contact-bar__wa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    flex-shrink: 0;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.35);
+}
+
+.mobile-contact-bar__wa-btn:active {
+    transform: scale(0.92);
+    box-shadow: 0 1px 4px rgba(37, 211, 102, 0.3);
+}
+
+/* Call us pill button (right) */
+.mobile-contact-bar__call-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 20px;
+    height: 46px;
+    border-radius: 24px;
+    background: #E76F51;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.mobile-contact-bar__call-btn:active {
+    transform: scale(0.95);
+    background: #d4553a;
+}

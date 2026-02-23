@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
+import WhatsAppFloat from '@/components/ui/WhatsAppFloat';
+import MobileContactBar from '@/components/ui/MobileContactSlider';
 
 const inter = Inter({
     subsets: ['latin'],
@@ -35,7 +37,12 @@ export const viewport = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" className={inter.variable}>
-            <body>{children}</body>
+            <body>
+                {children}
+                <WhatsAppFloat />
+                <MobileContactBar />
+            </body>
         </html>
     );
 }
+

@@ -5,12 +5,14 @@ export async function POST(request) {
         const body = await request.json();
         const { name, email, mobile, whatsapp, date, destination, message } = body;
 
-        // Create reusable transporter using Gmail SMTP
+        // Create reusable transporter using custom SMTP
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            host: process.env.SMTP_HOST,
+            port: Number(process.env.SMTP_PORT) || 465,
+            secure: true, // true for port 465 (SSL)
             auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS,
+                user: process.env.SMTP_USER,
+                pass: process.env.SMTP_PASS,
             },
         });
 
@@ -60,9 +62,10 @@ export async function POST(request) {
 
         // Send mail
         await transporter.sendMail({
-            from: `"EuroAsian DMC Website" <${process.env.EMAIL_USER}>`,
-            to: 'gm3669317@gmail.com',
-            subject: 'New Lead Submission',
+            from: `"EuroAsian DMC Website" <${process.env.SMTP_USER}>`,
+            to: process.env.SMTP_USER,
+            replyTo: email || undefined,
+            subject: `New Lead: ${name || 'Website Inquiry'}`,
             html: htmlContent,
         });
 
